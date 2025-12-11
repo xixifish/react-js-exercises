@@ -1,5 +1,5 @@
 import './App.css';
-import Timer from './components/Timer';
+import Timers from './components/Timers';
 import Dashboard from './components/Dashboard';
 import { Routes, Route } from "react-router-dom";
 
@@ -10,7 +10,7 @@ export default function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/timer" element={<Timer />} />
+          <Route path="/timers" element={<Timers />} />
           {/* Add a 404/NotFound route */}
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
